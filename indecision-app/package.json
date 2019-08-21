@@ -16,7 +16,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "react": "16.0.0",
-    "react-dom": "16.0.0",
+    "react-dom": "16.0.1",
     "webpack": "^4.39.2",
     "webpack-dev-server": "^3.8.0"
   },
