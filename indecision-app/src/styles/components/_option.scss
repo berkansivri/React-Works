@@ -1,0 +1,13 @@
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: $l-size $m-size;
+  border-bottom: 1px solid ligthen($light-blue, 10%);
+}
+
+.option__text {
+  color:white;
+  font-weight: 500;
+  margin: 0;
+  font-size: 2rem;
+}
