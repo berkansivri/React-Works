@@ -1,8 +1,7 @@
 import React from 'react'
 import moment from 'moment'
-import { SingleDatePicker } from 'react-dates';
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
+import { SingleDatePicker } from 'react-dates'
+import 'react-dates/lib/css/_datepicker.css'
 
 export default class ExpenseForm extends React.Component {
   constructor(props) {
@@ -34,11 +33,11 @@ export default class ExpenseForm extends React.Component {
   }
   onDateChange = (createdAt) => {
     if(createdAt) {
-      this.setState(() => { createdAt })
+      this.setState(() => ({ createdAt }))
     }
   }
-  onFocusChange = (calendarFocused) => {
-    this.setState(() => { calendarFocused })
+  onFocusChange = ({ focused }) => {
+    this.setState(() => ({ calendarFocused: focused }))
   }
   onSubmit = (e) => {
     e.preventDefault();
@@ -78,6 +77,8 @@ export default class ExpenseForm extends React.Component {
             onDateChange={this.onDateChange}
             focused={this.state.calendarFocused}
             onFocusChange={this.onFocusChange}
+            numberOfMonths={1}
+            isOutsideRange={() => false}
           />
           <textarea 
             placeholder="Add a not for your expense (optional)" 
