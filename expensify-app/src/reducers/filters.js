@@ -3,7 +3,7 @@ import moment from 'moment'
 
 const filtersDefaultState = {
   text: '',
-  sortBy: 'amount', //date or amount
+  sortBy: 'date', //date or amount
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month')
 }
