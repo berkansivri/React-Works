@@ -5,7 +5,6 @@ exports[`should render header correctly 1`] = `
   <h1>
     Expensify
   </h1>
-  asd
   <NavLink
     activeClassName="is-active"
     exact={true}
